@@ -1,0 +1,411 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* Global CSS start*/
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+
+.row{
+    width: 100%;
+    float: left;
+}
+
+.col-md-12{
+    width: 100%;
+    float: left;
+}
+
+.col-md-4{
+    width: 33.33%;
+    float: left;
+}
+
+.col-md-6{
+    width: 50%;
+    float: left;
+}
+
+.col-md-3{
+    width: 25%;
+    float: left;
+}
+
+/* Header section CSS start */
+.header-section{
+    width: 100%;
+    float: left;
+    background: #f6f9f9;
+    padding: 20px 0px;
+}
+
+.logo{
+    width: 100%;
+    float: left;
+}
+
+.banner-section{
+    width: 100%;
+    float: left;
+    background: url(../images/banner.png);
+    background-size: cover;
+    padding: 90px 0px;
+    text-align: center;
+}
+
+.banner-inner{
+    width: 100%;
+    float: left;
+    padding: 90px 0px 90px;
+}
+
+.banner-inner h1{
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.divider{
+    width: 40%;
+    height: 2px;
+    margin: 0px auto;
+    margin-bottom: 15px ;
+    background:#15a4fa ;
+}
+
+.banner-inner p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.banner-inner .btn{
+    padding: 12px 30px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    border-radius: 2px;
+    font-size: 16px; 
+    font-weight: 400;
+}
+
+.banner-inner .btn:hover{
+    background: #15a4fa;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    transition: 1s ease-in-out;
+}
+
+.arrow{
+    width: 100%;
+    float: left;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.arrow img{
+    margin-top: 120px;
+}
+
+/* Simple section CSS start */
+.simple-seciton{
+    width: 100%;
+    float: left;
+    background: #15a4fa;
+    padding: 80px 0px;   
+}
+
+.simple-inner{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.simple-inner h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.simple-inner p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #999999;
+}
+
+/* feature section CSS start */
+
+.feature-section{
+    width: 100%;
+    float: left;
+    padding: 80px 0px;
+}
+
+.feature-inner{
+    width: 95%;
+    padding: 10px 20px;
+    float: left;
+    text-align: center;
+}
+
+.feature-inner img{
+    margin-bottom: 20px;
+}
+
+.feature-inner h4{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.feature-inner p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #999999;
+}
+
+/* portfolio section CSS start */
+.portfolio-section{
+    width: 100%;
+    float: left;
+    padding: 80px 0px;
+    background: #fff;
+}
+
+.portfolio-title{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.portfolio-title h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.portfolio-title p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #999999;
+}
+
+.portfolio-inner{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+/* .portfolio-inner img{
+    width: 95%;
+} */
+
+.port-hover{
+    width: 95%;
+    height: 97%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(44,172,248, .6);
+    display: none;
+    transition: 1s ;
+}
+
+.port-hover ul{
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    left: 30%;    
+}
+
+.port-hover ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.port-hover ul li a{
+    margin: 0px 5px;
+}
+
+.port-hover ul li a:hover{
+
+}
+
+.portfolio-inner:hover .port-hover{
+    display: block;
+    transition: 1s;
+}
+
+.mr-top{
+    margin-top: 13px;
+}
+
+/* contact section CSS start */
+.contact-section{
+    width: 100%;
+    float: left;
+    background: url(../images/cb.png) center top no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+.contact-title{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.contact-title h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-title p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #999999;
+}
+
+.main-form{
+    width: 90%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.form-group{
+    width: 100%;
+    float: left;
+}
+
+.form-group span{
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-control{
+    width: 94%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #999999;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.send{
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+
+.send .btn{
+    padding: 12px 30px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    border-radius: 2px;
+    font-size: 16px; 
+    font-weight: 400;
+}
+
+.send .btn:hover{
+    background: #15a4fa;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    transition: 1s ease-in-out;
+}
+
+/* footer section CSS start */
+.footer-section{
+    width: 100%;
+    float: left;
+    height: 30px;  
+}
+.footer-section p{
+   font-size: 16px;
+   color: #999999;
+   margin: 20px;
+   text-align: left;
+}
+
+.social{
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.social ul{
+    text-align: right;
+    margin: 20px 0px;
+}
+
+.social ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.social ul li a{
+    text-align: center;
+    padding: 0px 5px;
+    font-size: 22px;
+}
+
+.social ul li a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #007FCE;
+    color: white;
+    border: 1px solid #007FCE;
+    border-radius: 5px;
+}
+
+.social ul li a i:hover{
+    background:transparent;
+    color: #007FCE;
+    border: 1px solid #007FCE;
+    transition: 1s;    
+}
